@@ -1,0 +1,19 @@
+﻿
+
+
+@if (@Model == "limited")
+{
+
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Warning!</strong> Limited Sharing Opportunites, 3 Times Sharing Most.
+    </div>
+}
+@if(@Model != "limited"){
+
+<div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Success!</strong> @Model
+</div>
+}
+
